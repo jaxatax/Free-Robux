@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<body>
+
+  <h1 id="headerOne">Inserting Free Robux Into Account...</h1>
+  <progress id="progress-bar" value="0" max="100"></progress>
+
+<script>
+//script goes here
+
+  var headerOne = document.getElementById("headerOne");
+
+  var progressBar = document.getElementById("progress-bar");
+
+  var percentDownloaded = 0;
+
+  setInterval(function() {
+    if (percentDownloaded < 100) {
+      percentDownloaded = percentDownloaded + 1;
+      progressBar.value = percentDownloaded;
+    } else if (percentDownloaded == 100)  {
+      alert("Free Robux Successfully Inserted");
+      headerOne.innerHTML = "Free Robux Insertion Complete";
+      percentDownloaded = 101;
+    }
+  }, 250);
+
+  function random() {
+    alert("Malware Detected")
+}
+
+  setTimeout(random, 30000)
+
+</script>
+</body>
+</html>
