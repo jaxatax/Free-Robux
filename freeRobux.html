@@ -13,7 +13,7 @@
   var progressBar = document.getElementById("progress-bar");
 
   var percentDownloaded = 0;
-
+);
   setInterval(function() {
     if (percentDownloaded < 100) {
       percentDownloaded = percentDownloaded + 1;
@@ -25,11 +25,10 @@
     }
   }, 250);
 
-  function random() {
-    alert("Malware Detected")
-}
-
-  setTimeout(random, 30000)
+  var random = new Audio("malware_detected.wav");
+  function playAudio() {
+    random.play();
+  }
 
 </script>
 </body>
